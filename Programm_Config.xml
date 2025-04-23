@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Konfiguration-->
+<Einstellungen>
+  <TracePath>C:\EDI\PROD_In_Port\</TracePath>
+  <TracePathLokal>C:\Trace_Lokal\</TracePathLokal>
+  <BGConfig>S:\BECOM_AT\Groups\Fertigung\Produktionsanlagen\Verguss_Lackieren_Certonal\Process_Config.ini</BGConfig>
+  <SART>4647</SART>
+  <Version_Schnittstelle>V00</Version_Schnittstelle>
+  <Mandant>001</Mandant>
+</Einstellungen>
