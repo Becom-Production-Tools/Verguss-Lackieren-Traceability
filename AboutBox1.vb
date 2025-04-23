@@ -1,4 +1,5 @@
-﻿Public NotInheritable Class AboutBox1
+﻿Imports System.IO
+Public NotInheritable Class AboutBox1
 
     Private Sub AboutBox1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Legen Sie den Titel des Formulars fest.
@@ -12,19 +13,12 @@
         ' Initialisieren Sie den gesamten Text, der im Infofeld angezeigt wird.
         ' TODO: Die Assemblyinformationen der Anwendung im Bereich "Anwendung" des Dialogfelds für die 
         '    Projekteigenschaften (im Menü "Projekt") anpassen.
-        'Me.LabelProductName.Text = My.Application.Info.ProductName
-        'Me.LabelVersion.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)
-        'Me.LabelCopyright.Text = My.Application.Info.Copyright
-        'Me.LabelCompanyName.Text = My.Application.Info.CompanyName
-        'Me.TextBoxDescription.Text = My.Application.Info.Description
-
-        Me.LabelProductName.Text = Form1.Text
-        Me.LabelVersion.Text = Form1.ProgVersion.Text
-        Me.LabelCopyright.Text = "© Mario Rehberger"
-        Me.LabelCompanyName.Text = "BECOM Electronics GmbH"
-        Me.TextBoxDescription.Text = "Beschreibung: " + vbCrLf + "Dieses Programm dient zum erfassen der Seriennummern beim Verguss / Lackieren. " + vbCrLf +
-            "Zu Beginn müssen Personalnummer (Stempelkarte) und Auftragsnummer (Begleitzettel) gescannt werden. Danach muss der zu bearbeitende Prozess ausgewählt werden. Anschließend können die Seriennummern erfasst werden." + vbCrLf +
-            "Nach dem erfassen der Seriennummern werden Daten in die Datenbank geschrieben"
+        LabelProductName.Text = My.Application.Info.ProductName
+        LabelVersion.Text = String.Format("Version {0}.{1}", My.Application.Info.Version.Major, My.Application.Info.Version.Minor)
+        'LabelVersion.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)'
+        LabelCopyright.Text = My.Application.Info.Copyright
+        LabelCompanyName.Text = My.Application.Info.CompanyName
+        Me.TextBoxDescription.Text = File.ReadAllText(Application.StartupPath & "\ChangeLOG.txt")    ' My.Application.Info.Description
     End Sub
 
     Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OKButton.Click

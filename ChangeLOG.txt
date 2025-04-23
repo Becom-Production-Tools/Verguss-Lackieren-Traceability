@@ -1,22 +1,27 @@
 ﻿Änderungsverlauf
 
-V01
-2020-11-19 MRehberger
-- Programm ausgerollte
+V1.6
+2025-04-23 MRehberger
+- Verriegelung der Prozesszeit auf den Vorprozess hinzugefügt
+- Definition der Zeit im Config file "Process_Config.ini"
 
-V02
-2021-05-28 MRehberger
-- Änderung Datenabfrage Vorprozess. Zeiliche Sortierung und Auswertung Funktionsgruppe (FKT1)
+V1.5
+2024-06-13 MRehberger
+- "reset Auftrag" Button hinzugefügt
 
-V03
-2021-09-21 MRehberger
-- Prüfung, ob Datenbankpfad verbunden ist
-
-V04
+V1.4
 2023-11-15 MRehberger
 - Umgebaut, damit mehrere Prozesse mit diesem Programm gemacht werden können (underfill, lackieren, damm, ...)
 - Prozessverriegelung hinzu. Baugruppe und Prozess muss in Config-File eingestellt werden
 
-V05
-2024-06-13 MRehberger
-- "reset Auftrag" Button hinzugefügt
+V1.3
+2021-09-21 MRehberger
+- Prüfung, ob Datenbankpfad verbunden ist
+
+V1.2
+2021-05-28 MRehberger
+- Änderung Datenabfrage Vorprozess. Zeiliche Sortierung und Auswertung Funktionsgruppe (FKT1)
+
+V1.1
+2020-11-19 MRehberger
+- Programm ausgerollte

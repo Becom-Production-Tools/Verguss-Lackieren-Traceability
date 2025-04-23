@@ -40,7 +40,7 @@ Public Class Form1
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '###########Programmversion######################
-        ProgVersion.Text = "V06"
+        ProgVersion.Text = "V1.6"
         '################################################
 
         Call Einstellungen.Einstellungen_Load()     'laden der Konfigurationen
@@ -95,8 +95,8 @@ Public Class Form1
         Tabelle.Columns.Add("GesErg_Einzel", GetType(String))
         Tabelle.Columns.Add("GesErg_Nutzen", GetType(String))
 
-        TBPersNr.Text = "5160"
-        begleitzettel_DMC.Text = "8771865000000001"
+        'TBPersNr.Text = "5160"
+        'begleitzettel_DMC.Text = "8771865000000001"
         'TextBoxISNR.Text = "9991067423085"  'UBF2411--D    8551093000000001
         'TextBoxISNR.Text = "9991067422922"  'UBF3238--A    8554440000000001
         'TextBoxISNR.Text = "1902338649221" 1912338649220  'UBF3299-1C    8920160000000003
